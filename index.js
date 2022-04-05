@@ -68,3 +68,21 @@ console.log(queue.hasNext()); // true
 console.log(queue.dequeue()); // 'llama'
 console.log(queue.hasNext()); // false
 console.log(queue.dequeue()); // null
+
+// class StackDan {
+//     #list = [];
+
+//     push(item) {
+//         this.#list.push(item);
+//     }
+
+//     pop() {
+//         return #list.length ? #list.pop() : null
+//     }
+
+//     peek() {
+//         // Both codes are the same, .at is a newer function in JS
+//         // return this.#list[this.#list.lngeth - 1];
+//         return this.#list.at(-1);
+//     }
+// }
