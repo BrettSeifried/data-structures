@@ -77,6 +77,20 @@ class BinaryTreeNode {
       !this.right ? (this.right = node) : this.right.add(node);
     }
   }
+
+  //   Marty's Magic
+  //   add(node) {
+  //     if (node.value === this.value) {
+  //       return;
+  //     }
+  //     if (node.value < this.value) {
+  //       if (!this.left) this.left = node;
+  //       else this.left.add(node);
+  //     } else {
+  //       if (!this.right) this.right = node;
+  //       else this.right.add(node);
+  //     }
+  //   }
 }
 
 const B = new BinaryTreeNode('B');
@@ -129,6 +143,16 @@ class PersonTreeNode {
     }
     // go down tree?
   }
+
+  //Marty Magic
+  //   findPerson(name) {
+  //       if(this.value === name) return this.person
+  //       const dir = node.value < this.value ? 'left' : 'right';
+
+  //       if(!this[dir]) return null;
+
+  //       return this[dir].findPerson(name);
+  //   }
 }
 
 let person = root.find('Nelson');
